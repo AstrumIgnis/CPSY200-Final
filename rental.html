@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
 
@@ -15,9 +15,9 @@
             <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./equipment.html">Equipment</a></li>
+                    <li><a href="./equipment.html" class="currentPage">Equipment</a></li>
                     <li><a href="./customers.html">Customers</a></li> 
-                    <li><a class="currentPage">Rentals</a></li> 
+                    <li><a href="./rental.html">Rentals</a></li> 
                     <li><a href="./reports.html">Reports</a></li> 
                 </ul>
             </nav>
@@ -31,6 +31,7 @@
             <section>
                 <h2>Customer Information</h2>
                 <a>Search Customer</a>
+                <br></br>
                 <div class="search">
                     <input type="text" placeholder="Search by name, email, or phone">
                     <div class="buttons"><button type="button" class="blue">Search</button></div>
@@ -43,39 +44,47 @@
 
                 <h3>Equipment Selection</h3>
                 <a>Search Equipment</a>
+                <br></br>
                 <div class="search">
                     <input type="text" placeholder="Search by name, ID, or category">
                     <div class="buttons"><button type="button" class="blue">Search</button></div>
                 </div>
                 <input type="checkbox">
                 <a>Category</a>
+                <br></br>
                 <select name="cars" id="cars">
                     <option>All Categories</option>
                 </select>
-                <h3>Selected Equipment</h3>
-                <div id="results">
-                    <div class="search">
-                        <a>1. Excavator #1</a>
-                        <a>$150/day - Available</a>
-                        <div class="buttons"><button type="button" class="secondary">Remove</button></div>
+                <form>
+                    <h3>Selected Equipment</h3>
+                    <div id="results">
+                        <div class="search">
+                            <a>1. Excavator #1</a>
+                            <a>$150/day - Available</a>
+                            <div class="buttons"><button type="button" class="secondary">Remove</button></div>
+                        </div>
+                        <div class="search">
+                            <a>2. Safety Helmet #4</a>
+                            <a>$5/day - Available</a>
+                            <div class="buttons"><button type="button" class="secondary">Remove</button></div>
+                        </div> 
                     </div>
-                    <div class="search">
-                        <a>2. Safety Helmet #4</a>
-                        <a>$5/day - Available</a>
-                        <div class="buttons"><button type="button" class="secondary">Remove</button></div>
-                    </div> 
-                </div>
-                <a>Add another item</a>
+                </form>
+                <a href="#">Add another item</a>
                 <h3>Rental Details</h3>
                 <label for="startDate">Start Date</label>
+                <br></br>
                 <input type="date" id="startDate" name="startDate">
+                <br></br>
                 <label for="endDate">End Date</label>
+                <br></br>
                 <input type="date" id="endDate" name="endDate">
-
+                <br></br>
                 <a>Duration</a>
                 <a>3 days</a>
-
+                <br></br>
                 <label for="pickup">Pickup Time</label>
+                <br></br>
                 <select name="pickup" id="pickup">
                     <option>Select Time</option>
                     <option>7:00 AM</option>
@@ -88,10 +97,11 @@
                     <option>2:00 PM</option>
                     <option>3:00 PM</option>
                     <option>4:00 PM</option>
-                    <option>5:00 PM</option>
-                        
+                    <option>5:00 PM</option>        
                 </select>
+                <br></br>
                 <label for="return">Return Time</label>
+                <br></br>
                 <select name="return" id="return">
                     <option>Select Time</option>
                     <option>7:00 AM</option>
@@ -108,13 +118,16 @@
                 </select>
                 <h3>Additional Information</h3>
                 <a>Notes</a>
+                <br></br>
                 <input type="text" placeholder="Enter any additional notes">
+                <br></br>
                 <a>Special Requirements</a>
+                <br></br>
                 <input type="text" placeholder="Enter any special requirements">
                 <div class="buttons align-right">
-                    <button type="button">Cancel</button>
-                    <button type="button">Save as Draft</button>
-                    <button type="button" class="primary">Create Rental</button>
+                    <button type="button" class="margin">Cancel</button>
+                    <button type="button" class="margin">Save as Draft</button>
+                    <button type="button" class="primary margin">Create Rental</button>
                 </div> 
             </section>
         </form>
