@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3>Equipment Rental</h3>
+            <nav>
+                <h2 class="hidden">nav</h2>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./equipment.html">Equipment</a></li>
+                    <li><a href="./customers.html">Customers</a></li> 
+                    <li><a class="./rentals.html">Rentals</a></li> 
+                    <li><a class="currentPage">Reports</a></li> 
+                </ul>
+            </nav>
+            <!--<img src="images/logo.png" alt="widget logo"> Profile picture -->
+            <a>Admin</a>
+        </div>
+    </header>
+    <main>
+        <h1>Generate Reports</h1>
+        <section>
+            <h3>Report Options</h3> 
+            <a>Report Type</a>
+            <select name="reporttype" id="reporttype">
+                <option>Rental Activity</option>
+            </select>
+            <a>Date Range</a>
+            <select name="daterange" id="daterange">
+                <option>This Month</option> 
+            </select>
+            <a>Group By</a>
+            <select name="groupby" id="groupby">
+                <option>Month</option>
+            </select>
+            <button type="button">Generate Report</button>
+            <button type="button">Save Report Settings</button>
+        </section>
+        <section>
+            <h3>Recent Reports</h3> 
+            <a>Rental Activity - May 2025</a>
+            <a>Generated on May 10, 2025</a>
+            <button type="button">View</button>
+            <a>Revenue Analysis - Q1 2025</a>
+            <a>Generated on April 5, 2025</a>
+            <button type="button">View</button>
+            <a>Equipment Utilization - March 2025</a>
+            <a>Generated on April 1, 2025</a>
+            <button type="button">View</button>
+            <a>Maintenance Schedule - Q1 2025</a>
+            <a>Generated on March 15, 2025</a>
+            <button type="button">View</button>
+            <a>View All Reports</a>
+        </section>
+        <section>
+            <h3>Report Preview</h3>
+            <button type="button">Print</button>
+            <button type="button">Export</button>
+            <div>
+                <h4>Rental Activity Report</h4>
+                <a>May 1, 2025 - May 31, 2025</a>
+                <h4>Summary</h4>
+                <p>Total Rentals</p><br><h3>142</h3>
+                <p>Revenue</p><br><h3>$28,450</h3>
+                <p>Avg. Rental Duration</p><br><h3>4.2 days</h3>
+                <h3>Detailed Rental Data</h3>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Equiment</th>
+                        <th>Category</th>
+                        <th>Customer</th>
+                        <th>Duration</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>May 1, 2025</td>
+                        <td>Excavator #103</td>
+                        <td>Heavy Equipment</td>
+                        <td>ABC Construction</td>
+                        <td>5 days</td>
+                        <td>$750.00</td>
+                    </tr>
+                    <tr>
+                        <td>May 1, 2025</td>
+                        <td>Power Drill #45</td>
+                        <td>Power Tools</td>
+                        <td>John Smith</td>
+                        <td>2 days</td>
+                        <td>$50.00</td>
+                    </tr>
+                </table>
+                <h3>Equipment Category Breakdown</h3>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Rentals</th>
+                        <th>Revenue</th>
+                        <th>% of Total</th>
+                    </tr>
+                    <tr>
+                        <td>Heavy Equipment</td>
+                        <td>45</td>
+                        <td>$15,750.00</td>
+                        <td>55.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Power Rools</td>
+                        <td>38</td>
+                        <td>$4,980.00</td>
+                        <td>17.5%</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Equiment Rental System</p>
+        <p>Support Documentation Settings</p>
+    </footer>
+</body>

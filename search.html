@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3>Equipment Rental</h3>
+            <nav>
+                <h2 class="hidden">nav</h2>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./equipment.html">Equipment</a></li>
+                    <li><a href="./customers.html">Customers</a></li> 
+                    <li><a class="./rentals.html">Rentals</a></li> 
+                    <li><a class="currentPage">Reports</a></li> 
+                </ul>
+            </nav>
+            <!--<img src="images/logo.png" alt="widget logo"> Profile picture -->
+            <a>Admin</a>
+        </div>
+    </header>
+    <main>
+        <h1>Search</h1>
+        <section>
+            <input type="radio" id="equipment" name="searchtype" value="equipment">
+            <label for="html">Equipment</label><br>
+            <input type="radio" id="customers" name="searchtype" value="customers">
+            <label for="css">Customers</label><br>
+            <input type="radio" id="rentals" name="searchtype" value="rentals">
+            <label for="javascript">Rentals</label> 
+            <input type="text" placeholder="Search for available equipment rentals">
+            <button type="button">Search</button>
+            <a>Advanced Search Options</a>
+        </section>
+        <section>
+            <h3>Filters</h3>
+            <a>Category</a>
+            <select name="category" id="category">
+                <option>Select Category</option>
+                <option>Heavy Equipment</option>
+                <!--Feel free to add more-->
+            <select name="status" id="status">
+                <option>Available</option>
+                <option>Not Available</option>
+                <option>Any</option>
+            </select>
+            <a>Date Range</a>
+            <input type="date" id="startDate" name="startDate">
+            <input type="date" id="endDate" name="endDate">
+            <a>Price Range</a>
+            <input type="text" placeholder="Min">
+            <input type="text" placeholder="Max">
+            <button type="Apply Filters">Search</button>
+            <button type="Reset">Search</button>
+        </section>
+        <section>
+            <a>24 results found</a>
+            <a>Sort by</a>
+            <select name="sort" id="sort">
+                <option>Relevance</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+            </select>
+        </section>
+        <section>
+            <div id="results">
+                <h3>Excavator #103</h3>
+                <a>Category: Heavy Equipment</a>
+                <a>Available</a>
+                <a>$150/day</a>
+                <button type="button">View Details</button> 
+                <button type="button">Rent now</button> 
+
+                <h3>Power Drill #45</h3>
+                <a>Category: Power Tools</a>
+                <a>Rented (Due: May 15)</a>
+                <a>$25/day</a>
+                <button type="button">View Details</button> 
+                <button type="button">Rent now</button> 
+            </div>
+        </section>
+        <button type="button">Previous</button> 
+        <button type="button">1</button> 
+        <button type="button">2</button> 
+        <button type="button">3</button> 
+        <button type="button">Next</button> 
+    </main>
+    <footer>
+        <p>© 2025 Equiment Rental System</p>
+        <p>Support Documentation Settings</p>
+    </footer>
+</body>
