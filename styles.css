@@ -1,0 +1,188 @@
+header > div {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.currentPage {
+    color: blue;
+}
+
+footer {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.row > div {
+    flex: 1;
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+    width: 100%;
+    padding-left: 10px;
+    margin-right: 40px;
+    height: 30px;
+    text-align: start;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+input::placeholder {
+    text-align: start;
+}
+
+select {
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+form {
+    background-color: aliceblue;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 97%;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.align-right {
+    justify-content: right;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+}
+
+.buttons button.primary {
+    background-color: blue;
+    color: white;
+}
+
+.buttons button.secondary {
+    background-color: red;
+    color: white;
+}
+
+.buttons button.blue {
+    background-color: blue;
+    color: white;
+    align-items: start;
+}
+
+.buttons button.margin{
+    margin-top: 20px;
+}
+
+.radio {
+    display: flex;
+    gap: 20px;
+}
+
+.radio label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked{
+    background-color: blue;
+    border-color: black;
+}
+
+label[type="checkbox"] {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 20%;
+    height: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.secondary {
+    background-color: red;
+    color: white;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
