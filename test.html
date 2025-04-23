@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3>Equipment Rental</h3>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./equipment.html" class="currentPage">Equipment</a></li>
+                    <li><a href="./customers.html">Customers</a></li> 
+                    <li><a href="./rental.html">Rentals</a></li> 
+                    <li><a href="./reports.html">Reports</a></li> 
+                </ul>
+            </nav>
+            <!--<img src="images/logo.png" alt="widget logo"> Profile picture -->
+            <a>Admin</a>
+        </div>
+    </header>
+    <main>
+        <form>
+            <h1>Equipment Rental</h1>
+            <section>
+                <h2>Customer Information</h2>
+                <a>Search Customer</a>
+                <div class="search">
+                    <input type="text" placeholder="Search by name, email, or phone">
+                    <div class="buttons"><button type="button" class="blue">Search</button></div>
+                </div>
+                <div id="results">
+                    <h3>Justin Timberlake</h3>
+                    <a>timyjustty@example.com</a>
+                    <a>123-456-7890</a>
+                </div>
+
+                <h3>Equipment Selection</h3>
+                <a>Search Equipment</a>
+                <div class="search">
+                    <input type="text" placeholder="Search by name, ID, or category">
+                    <div class="buttons"><button type="button" class="blue">Search</button></div>
+                </div>
+                <input type="checkbox">
+                <a>Category</a>
+                <select name="cars" id="cars">
+                    <option>All Categories</option>
+                </select>
+                <h3>Selected Equipment</h3>
+                <div id="results">
+                    <div class="search">
+                        <a>1. Excavator #1</a>
+                        <a>$150/day - Available</a>
+                        <div class="buttons"><button type="button" class="secondary">Remove</button></div>
+                    </div>
+                    <div class="search">
+                        <a>2. Safety Helmet #4</a>
+                        <a>$5/day - Available</a>
+                        <div class="buttons"><button type="button" class="secondary">Remove</button></div>
+                    </div> 
+                </div>
+                <a>Add another item</a>
+                <h3>Rental Details</h3>
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" name="startDate">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" name="endDate">
+
+                <a>Duration</a>
+                <a>3 days</a>
+
+                <label for="pickup">Pickup Time</label>
+                <select name="pickup" id="pickup">
+                    <option>Select Time</option>
+                    <option>7:00 AM</option>
+                    <option>8:00 AM</option>
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>5:00 PM</option>
+                        
+                </select>
+                <label for="return">Return Time</label>
+                <select name="return" id="return">
+                    <option>Select Time</option>
+                    <option>7:00 AM</option>
+                    <option>8:00 AM</option>
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>5:00 PM</option>
+                </select>
+                <h3>Additional Information</h3>
+                <a>Notes</a>
+                <input type="text" placeholder="Enter any additional notes">
+                <a>Special Requirements</a>
+                <input type="text" placeholder="Enter any special requirements">
+                <div class="buttons align-right">
+                    <button type="button">Cancel</button>
+                    <button type="button">Save as Draft</button>
+                    <button type="button" class="primary">Create Rental</button>
+                </div> 
+            </section>
+        </form>
+        <form>    
+            <section>
+                <h3>Pricing Summary</h3>
+                <ul>
+                    <li>Excavator #1 (3 days at $150/day) $450.00</li>
+                    <li>Safety Helmet #4 (3 days at $5/day) $15.00</li>
+                    <li>Subtotal $465.00</li>
+                    <li>Tax $37.20</li>
+                    <li>Deposit $200.00</li>
+                    <li>Total Due $702.20</li>
+                </ul>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 Equipment Rental System</p>
+        <p>Support Documentation Settings</p>
+    </footer>
+</body>
