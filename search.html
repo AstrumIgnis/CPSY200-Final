@@ -35,7 +35,9 @@
             <input type="radio" id="rentals" name="searchtype" value="rentals">
             <label for="javascript">Rentals</label> 
             <input type="text" placeholder="Search for available equipment rentals">
-            <button type="button">Search</button>
+            <div class="buttons">
+                <button type="button" class="blue margin">Search</button>
+            </div>
             <a>Advanced Search Options</a>
         </section>
         <section>
@@ -45,6 +47,7 @@
                 <option>Select Category</option>
                 <option>Heavy Equipment</option>
                 <!--Feel free to add more-->
+            </select>
             <select name="status" id="status">
                 <option>Available</option>
                 <option>Not Available</option>
@@ -56,8 +59,10 @@
             <a>Price Range</a>
             <input type="text" placeholder="Min">
             <input type="text" placeholder="Max">
-            <button type="Apply Filters">Search</button>
-            <button type="Reset">Search</button>
+            <div class="buttons">
+                <button type="button" class="blue margin">Apply Filters</button>
+                <button type="button" class="blue margin">Reset</button>
+            </div>
         </section>
         <section>
             <a>24 results found</a>
@@ -71,25 +76,31 @@
         <section>
             <div id="results">
                 <h3>Excavator #103</h3>
-                <a>Category: Heavy Equipment</a>
-                <a>Available</a>
+                <a>Category: Heavy Equipment</a><br>
+                <a>Available</a><br>
                 <a>$150/day</a>
-                <button type="button">View Details</button> 
-                <button type="button">Rent now</button> 
+                <div class="buttons">
+                    <button type="button" class="blue margin">View Details</button> 
+                    <button type="button" class="blue margin">Rent now</button> 
+                </div>
 
                 <h3>Power Drill #45</h3>
-                <a>Category: Power Tools</a>
-                <a>Rented (Due: May 15)</a>
+                <a>Category: Power Tools</a><br>
+                <a>Rented (Due: May 15)</a><br>
                 <a>$25/day</a>
-                <button type="button">View Details</button> 
-                <button type="button">Rent now</button> 
+                <div class="buttons">
+                    <button type="button" class="blue margin">View Details</button> 
+                    <button type="button" class="blue margin">Rent now</button> 
+                </div>
             </div>
         </section>
-        <button type="button">Previous</button> 
-        <button type="button">1</button> 
-        <button type="button">2</button> 
-        <button type="button">3</button> 
-        <button type="button">Next</button> 
+        <div class="buttons">
+            <button type="button">Previous</button> 
+            <button type="button">1</button> 
+            <button type="button">2</button> 
+            <button type="button">3</button> 
+            <button type="button">Next</button> 
+        </div>
     </main>
     <footer>
         <p>© 2025 Equiment Rental System</p>

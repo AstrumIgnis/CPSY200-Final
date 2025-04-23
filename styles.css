@@ -67,7 +67,7 @@ h2 {
     padding-bottom: 5px;
 }
 
-form {
+form, section {
     background-color: aliceblue;
     padding: 20px;
     border: 1px solid #ccc;
@@ -114,6 +114,10 @@ form {
 
 .buttons button.margin{
     margin-top: 20px;
+}
+
+.buttons button.bottom{
+    margin-bottom: 20px;
 }
 
 .radio {
@@ -185,4 +189,14 @@ label[type="checkbox"] {
 .search {
     display: flex;
     align-items: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.border {
+    border: 1px solid black;
 }
