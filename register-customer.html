@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h3>Equipment Rental</h3>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./equipment.html">Equipment</a></li>
+                    <li><a href="./customers.html" class="currentPage">Customers</a></li> 
+                    <li><a href="./rental.html">Rentals</a></li> 
+                    <li><a href="./reports.html">Reports</a></li> 
+                </ul>
+            </nav>
+            <!--<img src="images/logo.png" alt="widget logo"> Profile picture -->
+            <a>Admin</a>
+        </div>
+    </header>
+    <main>
+        <h1>Register New Customer</h1>
+        <form>
+            <div class="radio">
+                <label><input type="radio" value="individual" checked>Individual</label>
+                <label><input type="radio" value="business">Business</label>
+            </div>
+
+            <section>
+                <h2>Personal Information</h2>
+                <div class="row">
+                    <div>
+                        <h3>First Name</h3>
+                        <input type="text" name="first_name" placeholder="Enter first name">
+                    </div>
+                    <div>
+                        <h3>Last Name</h3>
+                        <input type="text" name="last_name" placeholder="Enter last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <h3>Email Address</h3>
+                        <input type="email" name="email" placeholder="Enter email address">
+                    </div>
+                    <div>
+                        <h3>Phone Number</h3>
+                        <input type="tel" name="phone" placeholder="Enter phone number">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Address Information</h2>
+                <div>
+                    <h3>Street Address</h3>
+                    <input type="text" name="street" placeholder="Enter street address">
+                </div>
+                <div class="row">
+                    <div>
+                        <h3>City</h3>
+                        <input type="text" name="city" placeholder="Enter city">
+                    </div>
+                    <div>
+                        <h3>State/Province</h3>
+                        <input type="text" name="state" placeholder="Enter state or province">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <h3>ZIP/Postal Code</h3>
+                        <input type="text" name="postal_code" placeholder="Enter ZIP or postal code">
+                    </div>
+                    <div>
+                        <h3>Country</h3>
+                        <select name="country">
+                            <option>Select Country</option>
+                            <option>Canada</option>
+                            <option>US</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>ID Verification</h2>
+                <div class="row">
+                    <div>
+                        <h3>ID Type</h3>
+                        <select name="id_type">
+                            <option>Select ID Type</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>ID Number</h3>
+                        <input type="text" name="id_number" placeholder="Enter ID Number">
+                    </div>
+                </div>
+                <div>
+                    <h3>Exoiry Date</h3>
+                    <input type="date" name="expiry_date">
+                </div>
+            </section>
+            <section>
+                <h2>Payment Information</h2>
+                <div>
+                    <h3>Preferred Payment Method</h3>
+                    <select name="payment_method">
+                        <option>Select Payment Method</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Credit Card (Last 4 digits)</h3>
+                    <input type="text" name="credit_card" placeholder="Enter last 4 digits">
+                </div>
+                <label type="checkbox"><input type="checkbox" name="billing_same">Billing address same as address above</label>
+            </section>
+            <section>
+                <h2>Agreements</h2>
+                <ul>
+                    <li><label type="checkbox"><input type="checkbox">I agree to the <a href="#"> Terms and Conditions</a></label></li>
+                    <li><label type="checkbox"><input type="checkbox">I agree to the <a href="#"> Privacy Policy</a></label></li>
+                    <li><label type="checkbox"><input type="checkbox">I would like to receive marketing emails</label></li>
+                </ul>
+            </section>
+            <div class="buttons align-right">
+                <button type="button" class="margin">Cancel</button>
+                <button type="submit" class="margin">Register & Create Rental</button>
+                <button type="submit" class="primary margin">Register Customer</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 Equipment Rental System</p>
+        <p>Support Documentation Settings</p>
+    </footer>
+</body>
